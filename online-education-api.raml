@@ -1,0 +1,23 @@
+#%RAML 1.0
+title: online-education-api
+version: 1.0
+description: api for online tutorials
+resourceTypes: 
+  rst : !include common-resourceType.raml
+traits:
+  trt: !include common-trait.raml
+
+/courses:
+  type:
+    rst:
+      traitRef: trt
+      exampleRef: !include tutorial-example.raml
+      tutorialDtRef: !include tutorial-dt.raml
+
+
+  
+        
+
+    
+
+
